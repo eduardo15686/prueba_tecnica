@@ -1,0 +1,33 @@
+/* src/components/Nombre.css */
+.floating-label {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .floating-label .form-control {
+    padding: 0.75rem 0.75rem 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .floating-label label {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    font-size: 1rem;
+    color: #6c757d;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: #fff;
+    padding: 0 0.25rem;
+  }
+  
+  .floating-label .form-control:focus ~ label,
+  .floating-label .form-control:not(:placeholder-shown) ~ label {
+    top: -0.5rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: #007bff;
+  }
+  
